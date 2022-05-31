@@ -57,7 +57,7 @@ const LoginAuthAction = (inputs, history) => {
 
       axios.defaults.withCredentials = true;
       // const body = { username, password };
-      await getCSRFToken();
+      // await getCSRFToken();
       const body = inputs;
       const parseRes = (await axios.post("/authentication/login", inputs)).data
       console.log(parseRes);

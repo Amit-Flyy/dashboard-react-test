@@ -42,14 +42,14 @@ function Dashboard(props) {
 
     axios.defaults.headers.post['X-CSRF-Token'] = response.data.CSRFToken;
     
-    getProfile();
     
   };
-
-
-
+  
+  
+  
   useEffect(() => {
-    getCSRFToken();
+    getProfile();
+    // getCSRFToken();
   }, []);
 
 
