@@ -43,12 +43,12 @@ const getCSRFToken =async () => {
   console.log("In app.js", response.data.CSRFToken);
   axios.defaults.headers.post['X-CSRF-Token'] = response.data.CSRFToken;
   
+  checkAuthenticated();
 };
 
 
 useEffect(() => {
-  // getCSRFToken();
-  checkAuthenticated();
+  getCSRFToken();
   }, []);
 
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
