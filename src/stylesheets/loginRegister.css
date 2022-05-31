@@ -1,0 +1,32 @@
+
+.loginBackground {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f26e38 !important;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+
+}
+.subButton {
+    width: fit-content;
+    position: relative;
+    left: 40%;
+}
+
+.loginDiv {
+    background-color: aliceblue;
+    padding: 5%;
+    padding-top: 0.5%;
+    border-radius: 5%;
+    max-height: fit-content;
+    
+    min-width: 400px;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
